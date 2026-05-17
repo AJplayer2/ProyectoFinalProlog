@@ -22,3 +22,17 @@ apila_filas(N, Fila, [Fila|Resto]) :-
 tablero_vacio(Tablero) :-
     construye_fila(10, Fila),
     apila_filas(10, Fila, Tablero).
+
+% obten_n/3
+% Saca el N-ésimo elemento de una lista, contando desde 1.
+obten_n(1, [Elem|_], Elem).
+obten_n(N, [_|Resto], Elem) :-
+    N > 1,
+    N1 is N - 1,
+    obten_n(N1, Resto, Elem).
+
+% celda/4
+% Regresa el valor de la celda en fila X, columna Y del tablero.
+celda(Tablero, X, Y, Valor) :-
+    obten_n(X, Tablero, Fila),
+    obten_n(Y, Fila, Valor).
