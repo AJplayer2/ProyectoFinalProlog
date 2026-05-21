@@ -36,3 +36,9 @@ obten_n(N, [_|Resto], Elem) :-
 celda(Tablero, X, Y, Valor) :-
     obten_n(X, Tablero, Fila),
     obten_n(Y, Fila, Valor).
+
+% coordenada_valida/2
+% Verdadero si X y Y están ambos entre 1 y 10.
+coordenada_valida(X, Y) :-
+    X >= 1, X =< 10,
+    Y >= 1, Y =< 10.
