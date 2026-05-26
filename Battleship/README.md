@@ -4,8 +4,8 @@ Juego de Batalla Naval implementado en SWI-Prolog.
 Juega contra una IA que coloca y dispara de forma aleatoria.
 
 ## Integrantes
--
--
+- Angel Jayden Maya Morales
+- Aldo Yañez Ramirez
 - Diego Hernandez Vazquez 320309935
 
 ## Reglas del juego
