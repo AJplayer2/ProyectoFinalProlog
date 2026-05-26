@@ -4,3 +4,4 @@
 :- consult('tablero').
 :- consult('movimientos').
 :- consult('victoria').
+:- consult('ia').
