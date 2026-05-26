@@ -20,3 +20,14 @@ la celda queda marcada como tocado; si no, como fallado. Gana quien hunda todos 
 La IA fue implementada en `ia.pl`. Utiliza aleatoriedad para colocar su flota
 y para elegir dónde disparar cada turno. No tiene memoria de intentos anteriores
 más allá de evitar celdas ya atacadas.
+
+## Cómo jugar
+Desde la carpeta Battleship, sigue estos pasos:
+1. Carga el juego en SWI-Prolog:
+   ```prolog
+   ?- consult('juego.pl').
+   ```
+2. Inicia el juego:
+   ```prolog
+    ?- iniciar_juego.
+    ```

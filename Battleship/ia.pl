@@ -8,7 +8,7 @@
 % Inicializa la semilla aleatoria con el tiempo del sistema.
 % Llamar una vez al inicio de la partida.
 ia_init_random :-
-    randomize.
+    true.
 
 % Define los barcos que se colocarán:
 ia_barco(portaaviones,  5).
